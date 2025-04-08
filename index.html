@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo de Blackjack</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🃏 Jogo de Blackjack</h1>
+
+        <div class="hand" id="player-hand">
+            <h2>Cartas do Jogador</h2>
+            <div id="player-cards" class="cards"></div>
+            <p>Pontos: <span id="player-points">0</span></p>
+        </div>
+
+        <div class="hand" id="dealer-hand">
+            <h2>Cartas do Dealer</h2>
+            <div id="dealer-cards" class="cards"></div>
+            <p>Pontos: <span id="dealer-points">0</span></p>
+        </div>
+
+        <div id="controls">
+            <button id="hit">🃍 Comprar Carta</button>
+            <button id="stand">🛑 Parar</button>
+            <button id="new-game">🔄 Novo Jogo</button>
+        </div>
+
+        <div id="result">
+            <h2 id="game-result"></h2>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
